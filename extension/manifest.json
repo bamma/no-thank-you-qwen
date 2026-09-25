@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "No Thank You, Qwen",
+  "version": "1.0.0",
+  "description": "Removes Qwen AI review comments from GitHub pull request timelines.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
