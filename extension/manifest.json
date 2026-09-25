@@ -3,10 +3,27 @@
   "name": "No Thank You, Qwen",
   "version": "1.0.0",
   "description": "Removes Qwen AI review comments from GitHub pull request timelines.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_title": "No Thank You, Qwen"
+  },
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_start"
     }
   ]

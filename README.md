@@ -1,5 +1,7 @@
 # No Thank You, Qwen
 
+<img src="logo.png" alt="No Thank You, Qwen logo" width="160">
+
 Chrome extension that removes Qwen AI review comments from GitHub pull request timelines.
 
 A comment is removed when its body matches one of these signatures:
